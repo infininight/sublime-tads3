@@ -49,7 +49,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>support.function</string>
+							<string>support.function.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -61,7 +61,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.other</string>
+							<string>variable.other.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
