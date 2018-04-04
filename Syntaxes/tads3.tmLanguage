@@ -176,7 +176,7 @@
 					<key>match</key>
 					<string>0(?![0-9])|[1-9][0-9]*</string>
 					<key>name</key>
-					<string>constant.numeric.decimal.tads3</string>
+					<string>constant.numeric.integer.tads3</string>
 				</dict>
 			</array>
 		</dict>
