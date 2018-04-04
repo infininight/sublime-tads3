@@ -24,16 +24,40 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.tads3</string>
+						</dict>
+					</dict>
 					<key>match</key>
-					<string>//.*$</string>
+					<string>(//).*$</string>
 					<key>name</key>
 					<string>comment.line.double-slash.tads3</string>
 				</dict>
 				<dict>
 					<key>begin</key>
 					<string>/\*</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>\*/</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>comment.block.tads3</string>
 				</dict>
@@ -409,8 +433,24 @@
 				<dict>
 					<key>begin</key>
 					<string>R"{3,}</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>"{3,}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.triple.double.regex.tads3</string>
 					<key>patterns</key>
@@ -430,8 +470,24 @@
 				<dict>
 					<key>begin</key>
 					<string>R'{3,}</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>'{3,}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.triple.single.regex.tads3</string>
 					<key>patterns</key>
@@ -451,8 +507,24 @@
 				<dict>
 					<key>begin</key>
 					<string>R"</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>"</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.double.regex.tads3</string>
 					<key>patterns</key>
@@ -466,8 +538,24 @@
 				<dict>
 					<key>begin</key>
 					<string>R'</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>'</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.single.regex.tads3</string>
 					<key>patterns</key>
@@ -487,8 +575,24 @@
 				<dict>
 					<key>begin</key>
 					<string>"{3,}</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>"{3,}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.triple.double.tads3</string>
 					<key>patterns</key>
@@ -527,8 +631,24 @@
 				<dict>
 					<key>begin</key>
 					<string>'{3,}</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>'{3,}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.triple.single.tads3</string>
 					<key>patterns</key>
@@ -567,8 +687,24 @@
 				<dict>
 					<key>begin</key>
 					<string>"</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>"</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.double.tads3</string>
 					<key>patterns</key>
@@ -601,8 +737,24 @@
 				<dict>
 					<key>begin</key>
 					<string>'</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>'</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.single.tads3</string>
 					<key>patterns</key>
@@ -641,8 +793,24 @@
 				<dict>
 					<key>begin</key>
 					<string>"{3,}</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>"{3,}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.triple.double.tads3</string>
 					<key>patterns</key>
@@ -666,8 +834,24 @@
 				<dict>
 					<key>begin</key>
 					<string>'{3,}</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>'{3,}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.triple.single.tads3</string>
 					<key>patterns</key>
@@ -691,8 +875,24 @@
 				<dict>
 					<key>begin</key>
 					<string>"</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>"</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.double.tads3</string>
 					<key>patterns</key>
@@ -710,8 +910,24 @@
 				<dict>
 					<key>begin</key>
 					<string>'</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>'</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>string.quoted.single.tads3</string>
 					<key>patterns</key>
@@ -735,8 +951,24 @@
 				<dict>
 					<key>begin</key>
 					<string>\(</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.scope.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.scope.end.tads3</string>
+						</dict>
+					</dict>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -762,18 +994,50 @@
 					<string>\.</string>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.scope.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>match</key>
 					<string>\{</string>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.scope.end.tads3</string>
+						</dict>
+					</dict>
 					<key>match</key>
 					<string>\}</string>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.list.begin.tads3</string>
+						</dict>
+					</dict>
 					<key>match</key>
 					<string>\[</string>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.list.end.tads3</string>
+						</dict>
+					</dict>
 					<key>match</key>
 					<string>\]</string>
 				</dict>
@@ -1045,49 +1309,69 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.charset.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.charset.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>string.quoted.double.charset.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(charset)\s*("[^"]*")$</string>
+					<string>^\s*(#)\s*(charset)\s*("[^"]*")$</string>
 					<key>name</key>
 					<string>meta.preprocessor.charset.tads3</string>
 				</dict>
 				<dict>
 					<key>begin</key>
 					<string>(?x)
-						^\s*\#\s*(define)\s+ ([A-Za-z_][A-Za-z0-9_]*)
-						\((?:
+						^\s*(\#)\s*(define)\s+ ([A-Za-z_][A-Za-z0-9_]*)
+						(\()(?:
 							(?:\s*  ([A-Za-z][A-Za-z0-9_]*)  )\s*
 							(?:,\s* ([A-Za-z_][A-Za-z0-9_]*) \s*)*
-						)?\)
+						)?(\))
 		  			</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.define.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.function.preprocessor.tads3</string>
+							<string>keyword.other.preprocessor.define.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>variable.parameter.preprocessor.tads3</string>
+							<string>entity.name.function.preprocessor.tads3</string>
 						</dict>
 						<key>4</key>
 						<dict>
 							<key>name</key>
+							<string>punctuation.definition.parameters.begin.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
 							<string>variable.parameter.preprocessor.tads3</string>
+						</dict>
+						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.preprocessor.tads3</string>
+						</dict>
+						<key>7</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.parameters.end.tads3</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -1104,15 +1388,20 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*#\s*(define)\s+([A-Za-z_][A-Za-z0-9_]*)\b</string>
+					<string>^\s*(#)\s*(define)\s+([A-Za-z_][A-Za-z0-9_]*)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.define.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.define.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>entity.name.function.preprocessor.tads3</string>
@@ -1132,10 +1421,15 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*#\s*(error)\s+</string>
+					<string>^\s*(#)\s*(error)\s+</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.preprocessor.tads3</string>
+						</dict>
+						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.other.preprocessor.error.tads3</string>
@@ -1155,15 +1449,20 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*#\s*(ifdef)\s+([A-Za-z_][A-Za-z0-9_]*)\s*$</string>
+					<string>^\s*(#)\s*(ifdef)\s+([A-Za-z_][A-Za-z0-9_]*)\s*$</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.ifdef.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.ifdef.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>entity.other.function.preprocessor.ifdef.tads3</string>
@@ -1174,6 +1473,11 @@
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.preprocessor.tads3</string>
+						</dict>
+						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.other.preprocessor.endif.tads3</string>
@@ -1195,25 +1499,35 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*#\s*(ifndef)\s+([A-Za-z_][A-Za-z0-9_]*)\s*$</string>
+					<string>^\s*(#)\s*(ifndef)\s+([A-Za-z_][A-Za-z0-9_]*)\s*$</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.ifndef.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.ifndef.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>entity.other.function.preprocessor.ifdef.tads3</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*#\s*(endif)\s*$</string>
+					<string>^\s*(#)\s*(endif)\s*$</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.preprocessor.tads3</string>
+						</dict>
+						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.other.preprocessor.endif.tads3</string>
@@ -1241,9 +1555,14 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.ifdef.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.ifdef.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>entity.other.function.preprocessor.tads3</string>
@@ -1254,6 +1573,11 @@
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.preprocessor.tads3</string>
+						</dict>
+						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.other.preprocessor.endif.tads3</string>
@@ -1301,16 +1625,31 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.include.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>keyword.other.preprocessor.include.tads3</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
 							<string>string.quoted.double.include.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(include)\s*("[^"]*")\s*$</string>
+					<string>^\s*(#)\s*(include)\s*((")[^"]*("))\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.include.double.tads3</string>
 				</dict>
@@ -1320,16 +1659,31 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.include.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>keyword.other.preprocessor.include.tads3</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
 							<string>string.quoted.other.lt-gt.include.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(include)\s*(&lt;[^"]*&gt;)\s*$</string>
+					<string>^\s*(#)\s*(include)\s*((&lt;)[^"]*(&gt;))\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.include.lt-gt.tads3</string>
 				</dict>
@@ -1339,42 +1693,75 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.line.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>constant.numeric.line.tads3</string>
+							<string>keyword.other.preprocessor.line.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
+							<string>constant.numeric.line.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
 							<string>string.quoted.single.line.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.tads3</string>
+						</dict>
+						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(line)\s+(0|[1-9][0-9]*)\s*('[^']*')\s*$</string>
+					<string>^\s*(#)\s*(line)\s+(0|[1-9][0-9]*)\s*((')[^']*('))\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.line.tads3</string>
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*#\s*(pragma)\s+(message)\s*\(</string>
+					<string>^\s*(#)\s*(pragma)\s+(message)\s*(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.pragma.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>keyword.other.preprocessor.pragma.tads3</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
 							<string>keyword.other.preprocessor.pragma-message.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.value.begin.tads3</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\)\s*$</string>
+					<string>(\))\s*$</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.value.end.tads3</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>meta.preprocessor.pragma.tads3.message</string>
 					<key>patterns</key>
@@ -1391,24 +1778,39 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.pragma.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.pragma-newline-spacing.tads3</string>
+							<string>keyword.other.preprocessor.pragma.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
+							<string>keyword.other.preprocessor.pragma-newline-spacing.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.value.begin.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
 							<string>keyword.other.preprocessor.pragma-newline-spacing-value.tads3</string>
+						</dict>
+						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.value.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
-						^\s*\#\s* (pragma) \s+ (newline_spacing) \s*\(\s*
+						^\s*(\#)\s* (pragma) \s+ (newline_spacing) \s*(\()\s*
 							(collapse|delete|preserve|on|off)
-						\s*\)\s*$
+						\s*(\))\s*$
 					</string>
 					<key>name</key>
 					<string>meta.preprocessor.pragma.tads3.newline-spacing</string>
@@ -1419,21 +1821,36 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.pragma.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.pragma-stg.tads3</string>
+							<string>keyword.other.preprocessor.pragma.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
+							<string>keyword.other.preprocessor.pragma-stg.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.value.begin.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
 							<string>keyword.other.preprocessor.pragma-stg-value.tads3</string>
+						</dict>
+						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.value.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(pragma)\s+(sourceTextGroup)\s*\(\s*(on|off)\s*\)\s*$</string>
+					<string>^\s*(#)\s*(pragma)\s+(sourceTextGroup)\s*(\()\s*(on|off)\s*(\))\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.pragma.tads3.stg</string>
 				</dict>
@@ -1443,16 +1860,21 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.pragma.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.pragma.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.other.preprocessor.pragma-once.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(pragma)\s*(once)\s*$</string>
+					<string>^\s*(#)\s*(pragma)\s*(once)\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.pragma.tads3.once</string>
 				</dict>
@@ -1462,16 +1884,21 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.pragma.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.pragma.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.other.preprocessor.pragma-all-once.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(pragma)\s*(all_once)\s*[\+\-]\s*$</string>
+					<string>^\s*(#)\s*(pragma)\s*(all_once)\s*[\+\-]\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.pragma.tads3.all-once</string>
 				</dict>
@@ -1481,16 +1908,21 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.other.preprocessor.undef.tads3</string>
+							<string>punctuation.definition.preprocessor.tads3</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.preprocessor.undef.tads3</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>entity.other.function.preprocessor.undef.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(undef)\s*([A-Za-z_][A-Za-z0-9_]*)\s*$</string>
+					<string>^\s*(#)\s*(undef)\s*([A-Za-z_][A-Za-z0-9_]*)\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.undef.tads3</string>
 				</dict>
@@ -1506,20 +1938,30 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
+							<string>punctuation.definition.preprocessor.tads3</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
 							<string>keyword.other.preprocessor.else.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^\s*#\s*(else)\s*$</string>
+					<string>^\s*(#)\s*(else)\s*$</string>
 					<key>name</key>
 					<string>meta.preprocessor.else.tads3</string>
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*#\s*(elif)</string>
+					<string>^\s*(#)\s*(elif)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.preprocessor.tads3</string>
+						</dict>
+						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.other.preprocessor.elif.tads3</string>
@@ -1622,17 +2064,40 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
+							<string>punctuation.definition.tag.begin.tads3</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
 							<string>entity.name.tag.tads3</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>&lt;(?:\\.)?/([A-Za-z\\.]+)&gt;</string>
+					<string>(&lt;)(?:\\.)?/([A-Za-z\\.]+)(&gt;)</string>
 					<key>name</key>
 					<string>meta.tag.html.end.tads3</string>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.begin.tads3</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.tads3</string>
+						</dict>
+					</dict>
 					<key>match</key>
-					<string>\{[A-Za-z0-9/ \-_]*\}</string>
+					<string>(\{)[A-Za-z0-9/ \-_]*(\})</string>
 					<key>name</key>
 					<string>meta.tag.curly.tads3</string>
 				</dict>
@@ -1652,22 +2117,32 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.tag.tads3</string>
+							<string>punctuation.definition.tag.begin.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>constant.character.escape.tads3</string>
+							<string>entity.name.tag.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
+							<string>constant.character.escape.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
 							<string>invalid.illegal.bad-escape.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
-						&lt;([A-Za-z\.]+)\b(?:										# tag name, followed by...
+						(&lt;)([A-Za-z\.]+)\b(?:									# tag name, followed by...
 						[^\\"&lt;&gt;]												# a safe char...
 						(\\(?:													# or a good escape...
 							[\\&lt;&gt;"'\^v bnrt] |									# simple ones
@@ -1681,7 +2156,7 @@
 								u[0-9A-Fa-f]{3} (?![0-9A-Fa-f]) |				# bad 4-digit hex
 							[0-7] (?![0-7]) | [0-7]{2} (?![0-7]) |				# bad 3-digit octal
 							x(?![0-9A-Fa-f]) | x[0-9A-Fa-f] (?![0-9A-Fa-f])		# bad 2-digit hex
-						)))*&gt;
+						)))*(&gt;)
 		  			</string>
 					<key>name</key>
 					<string>meta.tag.html.begin.tads3</string>
@@ -1702,22 +2177,32 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.tag.tads3</string>
+							<string>punctuation.definition.tag.begin.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>constant.character.escape.tads3</string>
+							<string>entity.name.tag.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
+							<string>constant.character.escape.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
 							<string>invalid.illegal.bad-escape.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
-						&lt;([A-Za-z\.]+)\b(?:										# tag name, followed by...
+						(&lt;)([A-Za-z\.]+)\b(?:									# tag name, followed by...
 						[^\\'&lt;&gt;]												# a safe char...
 						(\\(?:													# or a good escape...
 							[\\&lt;&gt;"'\^v bnrt] |									# simple ones
@@ -1731,7 +2216,7 @@
 								u[0-9A-Fa-f]{3} (?![0-9A-Fa-f]) |				# bad 4-digit hex
 							[0-7] (?![0-7]) | [0-7]{2} (?![0-7]) |				# bad 3-digit octal
 							x(?![0-9A-Fa-f]) | x[0-9A-Fa-f] (?![0-9A-Fa-f])		# bad 2-digit hex
-						)))*&gt;
+						)))*(&gt;)
 		  			</string>
 					<key>name</key>
 					<string>meta.tag.html.begin.tads3</string>
@@ -1752,22 +2237,32 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.tag.tads3</string>
+							<string>punctuation.definition.tag.begin.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>constant.character.escape.tads3</string>
+							<string>entity.name.tag.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
+							<string>constant.character.escape.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
 							<string>invalid.illegal.bad-escape.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
-						&lt;([A-Za-z\.]+)\b(?:										# tag name, followed by...
+						(&lt;)([A-Za-z\.]+)\b(?:									# tag name, followed by...
 						[^\\"&lt;&gt;] | "(?!") | ""(?!") |							# a safe char, or a non-closing quote...
 						(\\(?:													# or a good escape...
 							[\\&lt;&gt;\^v bnrt]  |									# simple ones
@@ -1782,7 +2277,7 @@
 								u[0-9A-Fa-f]{3} (?![0-9A-Fa-f]) |				# bad 4-digit hex
 							[0-7] (?![0-7]) | [0-7]{2} (?![0-7]) |				# bad 3-digit octal
 							x(?![0-9A-Fa-f]) | x[0-9A-Fa-f] (?![0-9A-Fa-f])		# bad 2-digit hex
-						)))*&gt;
+						)))*(&gt;)
 		  			</string>
 					<key>name</key>
 					<string>meta.tag.html.begin.tads3</string>
@@ -1803,22 +2298,32 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.tag.tads3</string>
+							<string>punctuation.definition.tag.begin.tads3</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>constant.character.escape.tads3</string>
+							<string>entity.name.tag.tads3</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
+							<string>constant.character.escape.tads3</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
 							<string>invalid.illegal.bad-escape.tads3</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.tag.end.tads3</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
-						&lt;([A-Za-z\.]+)\b(?:										# tag name, followed by...
+						(&lt;)([A-Za-z\.]+)\b(?:									# tag name, followed by...
 						[^\\'&lt;&gt;] | '(?!') | ''(?!') |						# a safe char, or a non-closing quote...
 						(\\(?:													# or a good escape...
 							[\\&lt;&gt;\^v bnrt]  |									# simple ones
@@ -1833,7 +2338,7 @@
 								u[0-9A-Fa-f]{3} (?![0-9A-Fa-f]) |				# bad 4-digit hex
 							[0-7] (?![0-7]) | [0-7]{2} (?![0-7]) |				# bad 3-digit octal
 							x(?![0-9A-Fa-f]) | x[0-9A-Fa-f] (?![0-9A-Fa-f])		# bad 2-digit hex
-						)))*&gt;
+						)))*(&gt;)
 		  			</string>
 					<key>name</key>
 					<string>meta.tag.html.begin.tads3</string>
