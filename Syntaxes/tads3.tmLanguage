@@ -6,6 +6,8 @@
 	<array>
 		<string>t</string>
 	</array>
+	<key>keyEquivalent</key>
+	<string>^~T</string>
 	<key>name</key>
 	<string>Tads 3</string>
 	<key>patterns</key>
