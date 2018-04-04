@@ -99,291 +99,45 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\bclass\b</string>
+					<string>\b(break|case|catch|continue|default|do|else|finally|for|foreach|goto|if|return|switch|throw|try|while)\b</string>
 					<key>name</key>
-					<string>storage.type.class.tads3</string>
+					<string>keyword.control.$1.tads3</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\bdelegated\b</string>
+					<string>\b(delegated|inherited|new|replaced)\b</string>
 					<key>name</key>
-					<string>keyword.operator.delegated.tads3</string>
+					<string>keyword.operator.$1.tads3</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\bdictionary\b</string>
+					<string>\b(object|static)\b</string>
 					<key>name</key>
-					<string>storage.type.dictionary.tads3</string>
+					<string>keyword.other.$1.tads3</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\benum\b</string>
+					<string>\b(export|extern|modify|multimethod|replace|transient)\b</string>
 					<key>name</key>
-					<string>storage.type.enum.tads3</string>
+					<string>storage.modifier.$1.tads3</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\bextern\b</string>
+					<string>\b(class|dictionary|enum|function|intrinsic|local|method|operator|property|propertyset|template)\b</string>
 					<key>name</key>
-					<string>storage.modifier.extern.tads3</string>
+					<string>storage.type.$1.tads3</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\bexport\b</string>
+					<string>\b(nil|true)\b</string>
 					<key>name</key>
-					<string>storage.modifier.export.tads3</string>
+					<string>constant.other.$1.tads3</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\bfunction\b</string>
+					<string>\b(argcount|definingobj|self|targetobj|targetprop|invokee)\b</string>
 					<key>name</key>
-					<string>storage.type.function.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\binherited\b</string>
-					<key>name</key>
-					<string>keyword.operator.inherited.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bintrinsic\b</string>
-					<key>name</key>
-					<string>storage.type.intrinsic.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\blocal\b</string>
-					<key>name</key>
-					<string>storage.type.local.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bmethod\b</string>
-					<key>name</key>
-					<string>storage.type.method.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bmodify\b</string>
-					<key>name</key>
-					<string>storage.modifier.modify.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bmultimethod\b</string>
-					<key>name</key>
-					<string>storage.modifier.multimethod.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bnew\b</string>
-					<key>name</key>
-					<string>keyword.operator.new.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bnil\b</string>
-					<key>name</key>
-					<string>constant.other.nil.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bobject\b</string>
-					<key>name</key>
-					<string>keyword.other.object.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\boperator\b</string>
-					<key>name</key>
-					<string>storage.type.operator.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bproperty\b</string>
-					<key>name</key>
-					<string>storage.type.property.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bpropertyset\b</string>
-					<key>name</key>
-					<string>storage.type.propertyset.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\breplace\b</string>
-					<key>name</key>
-					<string>storage.modifier.replace.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\breplaced\b</string>
-					<key>name</key>
-					<string>keyword.operator.replaced.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bstatic\b</string>
-					<key>name</key>
-					<string>keyword.other.static.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\btemplate\b</string>
-					<key>name</key>
-					<string>storage.type.template.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\btransient\b</string>
-					<key>name</key>
-					<string>storage.modifier.transient.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\btrue\b</string>
-					<key>name</key>
-					<string>constant.other.true.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bbreak\b</string>
-					<key>name</key>
-					<string>keyword.control.break.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bcase\b</string>
-					<key>name</key>
-					<string>keyword.control.case.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bcatch\b</string>
-					<key>name</key>
-					<string>keyword.control.catch.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bcontinue\b</string>
-					<key>name</key>
-					<string>keyword.control.continue.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bdefault\b</string>
-					<key>name</key>
-					<string>keyword.control.default.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bdo\b</string>
-					<key>name</key>
-					<string>keyword.control.do.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bif\b</string>
-					<key>name</key>
-					<string>keyword.control.if.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\belse\b</string>
-					<key>name</key>
-					<string>keyword.control.else.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bfinally\b</string>
-					<key>name</key>
-					<string>keyword.control.finally.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bfor\b</string>
-					<key>name</key>
-					<string>keyword.control.for.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bforeach\b</string>
-					<key>name</key>
-					<string>keyword.control.foreach.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bgoto\b</string>
-					<key>name</key>
-					<string>keyword.control.goto.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\breturn\b</string>
-					<key>name</key>
-					<string>keyword.control.return.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bswitch\b</string>
-					<key>name</key>
-					<string>keyword.control.switch.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bthrow\b</string>
-					<key>name</key>
-					<string>keyword.control.throw.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\btry\b</string>
-					<key>name</key>
-					<string>keyword.control.try.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bwhile\b</string>
-					<key>name</key>
-					<string>keyword.control.while.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bargcount\b</string>
-					<key>name</key>
-					<string>entity.other.argcount.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bdefiningobj\b</string>
-					<key>name</key>
-					<string>entity.other.definingobj.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\bself\b</string>
-					<key>name</key>
-					<string>entity.other.self.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\btargetobj\b</string>
-					<key>name</key>
-					<string>entity.other.targetobj.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\btargetprop\b</string>
-					<key>name</key>
-					<string>entity.other.targetprop.tads3</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\binvokee\b</string>
-					<key>name</key>
-					<string>entity.other.invokee.tads3</string>
+					<string>entity.other.$1.tads3</string>
 				</dict>
 			</array>
 		</dict>
