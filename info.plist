@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>wrssalzna@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Jeff Nyman</string>
+	<key>description</key>
+	<string>Text Adventure Development System, for creating interactive fiction (IF) games.</string>
+	<key>name</key>
+	<string>Tads 3</string>
+	<key>uuid</key>
+	<string>7298A864-0E56-48F7-B281-EC3CB338EA4D</string>
+</dict>
+</plist>
