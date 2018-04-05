@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>t</string>
+		<string>t3m</string>
 	</array>
 	<key>keyEquivalent</key>
 	<string>^~T</string>
