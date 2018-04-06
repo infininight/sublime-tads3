@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require "tempfile"
+require "#{ENV["TM_SUPPORT_PATH"]}/lib/tm/executor"
+require "#{ENV["TM_SUPPORT_PATH"]}/lib/escape"
+
+gamename = ENV["TM_TADS3_GAMENAME"] || File.basename(ENV["TM_FILEPATH"], File.extname(ENV["TM_FILEPATH"]))
+
+flags = [ ]
+flags &lt;&lt; "-f"
+flags &lt;&lt; gamename
+
+Tempfile::open('tm_t3make_build') do |tmpfile|
+  TextMate::Executor.run(e_sh(ENV["TM_T3MAKE"]), flags, :verb =&gt; "Building", :noun =&gt; gamename, :use_hashbang =&gt; false, :version_args =&gt; [tmpfile.path], :version_regex =&gt; /\A(.*)  Copyright.*$(?:\n.*)*/m, :chdir =&gt; ENV['TM_DIRECTORY'])
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Build</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>cmake</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/t3make</string>
+				<string>/usr/local/bin/t3make</string>
+			</array>
+			<key>variable</key>
+			<string>TM_T3MAKE</string>
+		</dict>
+	</array>
+	<key>scope</key>
+	<string>source.tads3</string>
+	<key>uuid</key>
+	<string>3A96C337-5E26-436C-954E-D27449E79560</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
