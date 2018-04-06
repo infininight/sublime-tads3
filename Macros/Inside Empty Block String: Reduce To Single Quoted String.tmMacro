@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>deleteForward:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>deleteForward:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>deleteBackward:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>deleteBackward:</string>
+		</dict>
+	</array>
+	<key>hideFromUser</key>
+	<true/>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Inside Empty Block String: Reduce To Single Quoted String</string>
+	<key>scope</key>
+	<string>source.tads3 string.quoted.triple.single punctuation.definition.string.end &amp; L:punctuation.definition.string.begin, source.tads3 string.quoted.triple.double punctuation.definition.string.end &amp; L:punctuation.definition.string.begin</string>
+	<key>uuid</key>
+	<string>ED9F2C06-07E4-4FCD-B2AE-4736D8E74051</string>
+</dict>
+</plist>
