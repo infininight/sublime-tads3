@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/escape.rb'
+
+gamename = ENV["TM_TADS3_GAMENAME"] || File.basename(ENV["TM_FILEPATH"], File.extname(ENV["TM_FILEPATH"]))
+
+def is_running(process)
+  all = `ps -U "$USER" -o ucomm`
+  Array(all).find { |cmd| process == cmd.strip }
+end
+
+def terminal_script_new_window(dir, gamename)
+  return &lt;&lt;-APPLESCRIPT
+    tell application "Terminal"
+      activate
+      do script "cd #{e_as(e_sh(dir))}; frob #{e_as(e_sh(gamename))}"
+    end tell
+APPLESCRIPT
+end
+
+def terminal_script_new_tab(dir, gamename)
+  return &lt;&lt;-APPLESCRIPT
+  tell application "Terminal"
+    activate
+    set originalContent to contents of tab in window 1
+    tell application "System Events"
+      repeat while "Terminal" is not name of (process 1 where frontmost is true)
+        delay 0.1
+      end repeat
+      tell process "Terminal" to keystroke "t" using command down
+    end tell
+    set startedAt to current date
+    repeat while (contents of tab in window 1) is originalContent
+      delay 0.1
+      if (current date) - startedAt &gt; 2 then
+        error "Could not open new tab"
+      end if
+    end repeat
+    do script "cd #{e_as(e_sh(dir))}; frob #{e_as(e_sh(gamename))}" in the last tab of window 1
+  end tell
+APPLESCRIPT
+end
+
+def iterm_legacy_script(dir, gamename)
+  return &lt;&lt;-APPLESCRIPT
+    tell application "iTerm"
+      activate
+      if exists the first terminal then
+        set myterm to the first terminal
+      else
+        set myterm to (make new terminal)
+      end if
+      tell myterm
+        activate current session
+        launch session "Default Session"
+        tell the last session
+          write text "cd #{e_as(e_sh(dir))}; frob #{e_as(e_sh(gamename))}"
+        end tell
+      end tell
+    end tell
+APPLESCRIPT
+end
+
+def iterm_script(dir, gamename)
+  return &lt;&lt;-APPLESCRIPT
+    tell application "iTerm2"
+      activate
+      if exists the first window then
+        set aWindow to the first window
+      else
+        set aWindow to (create window with default profile)
+      end if
+      tell aWindow
+        set newTab to (create tab with default profile)
+        tell newTab
+          repeat with aSession in sessions
+            tell aSession
+              write text "cd #{e_as(e_sh(dir))}; frob #{e_as(e_sh(gamename))}"
+            end tell
+          end repeat
+        end tell
+      end tell
+    end tell
+APPLESCRIPT
+end
+
+if dir = ENV['TM_PROJECT_DIRECTORY']
+  script = nil
+  if ENV['TM_TERMINAL'] =~ /^iterm$/i || is_running('iTerm2')
+    script = iterm_script(dir, gamename)
+  elsif is_running('iTerm')
+    script = iterm_legacy_script(dir, gamename)
+  else
+    script = ENV['TM_TERMINAL_USE_TABS'] ? terminal_script_new_tab(dir, gamename) : terminal_script_new_window(dir, gamename)
+  end
+  open("|osascript", "w") { |io| io &lt;&lt; script }
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.tads3</string>
+	<key>uuid</key>
+	<string>F5C8E219-4ED4-4C87-A74E-0226EC69AA1F</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

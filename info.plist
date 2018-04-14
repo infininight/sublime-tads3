@@ -8,6 +8,14 @@
 	<string>Jeff Nyman</string>
 	<key>description</key>
 	<string>Text Adventure Development System, for creating interactive fiction (IF) games.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>3A96C337-5E26-436C-954E-D27449E79560</string>
+			<string>F5C8E219-4ED4-4C87-A74E-0226EC69AA1F</string>
+		</array>
+	</dict>
 	<key>name</key>
 	<string>Tads 3</string>
 	<key>uuid</key>
